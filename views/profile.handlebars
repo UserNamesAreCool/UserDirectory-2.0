@@ -1,0 +1,22 @@
+<profile id="up">
+    <img src="{{avatar}}" alt="Profile Image">
+    <h1>{{name}}</h1>
+    <p id="top-left">
+        <span id="location">{{#if address.city}}{{address.city}},&nbsp;{{/if}}{{address.country}} | </span>
+        {{#if job}}
+            <span class="work">{{job}},&nbsp;{{company}}</span>
+        {{else}}
+            <span class="hire">Available for hire</span>
+        {{/if}}
+        <br>
+        <span>{{email}} | {{phone}}</span>
+        {{#if university}}
+            <h3 class="inline">Education:&nbsp;</h3><span>{{university}}</span>
+        {{/if}}
+        <br>
+        <p>
+        <h3 class="inline">Skills:&nbspl</h3>{{#each skills as |skill|}}<span>{{skill}}</span><br>{{/each}}
+        </p>
+    </p>
+    
+</profile>

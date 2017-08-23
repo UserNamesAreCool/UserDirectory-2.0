@@ -1,0 +1,20 @@
+<div id='searchbuffer'>Name Search: <span id='search' class='empty'>Type to filter by name</div>
+<profiles>
+    {{#each users}}
+    <a id="{{_id}}" class="profile" href="/robot/{{_id}}">
+        <img src="{{avatar}}" alt="{{username}}">
+        <br>
+        <span class="name">{{name}}</span>
+        {{#if job}}
+            <br>
+            <span class="job">{{job}},&nbsp;{{company}}</span>
+        {{else}}
+            <br>
+            <span class='hire'>Available for hire</span>
+        {{/if}}
+            <br>
+            <script src="/main.js">
+            </script>
+    </a>
+    {{/each}}
+</profiles>

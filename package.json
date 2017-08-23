@@ -1,0 +1,21 @@
+{
+  "name": "6-daily",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"npm del-db; npm load-db; npm run",
+    "del-db": "mongo robots --eval \"db.dropDatabase()\"",
+    "load-db": "mongoimport --db robots --collection users --file data.json",
+    "run": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "mongodb": "^2.2.31"
+  }
+}

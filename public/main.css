@@ -1,0 +1,55 @@
+profiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+profiles > a {
+    text-decoration: none;
+}
+.profile {
+    border: 0.05vw solid #000000;
+    margin: 0.6%;
+    padding: 0.5%;
+    color: black;
+    width: 22%;
+    height: 30vh;
+    text-align: center;
+    flex-grow: 0;
+
+}
+.profile > img {
+    width: 60%;
+    border-radius: 100%;
+}
+.skill {
+    word-wrap: normal;
+    margin: 0px;
+}
+.hire {
+    color: red !important;
+}
+
+#up > img {
+    border-radius: 100%;
+    float: left;
+    height: 20%;
+    width: 20%;
+}
+#up > .hire {
+    border-left: 1px solid #000000;
+    padding-left: 4px;
+}
+#up > #top-right {
+    display: inline-block;
+}
+.inline {
+    display: inline;
+}
+.inline-block {
+    display: inline-block;
+}
+
+.empty {
+    color: #A4A4A4;
+}
